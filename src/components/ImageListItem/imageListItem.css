@@ -2,3 +2,34 @@
     height: 300px;
     width: 500px;
 }
+
+.card {
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.card_banner {
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+}
+
+.card_thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card_title {
+    font-size: 1em;
+    color: black;
+}
+
+.card_status {
+    font-size: 0.8em;
+    color: black;
+}
+
+.card_text {
+    text-align: left;
+}

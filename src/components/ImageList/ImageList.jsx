@@ -1,4 +1,4 @@
-import s from './imageList.css';
+import './imageList.css'
 import ImageListenItem from "../ImageListItem/ImageListenItem";
 
 const ImageList = ({imgList}) =>
@@ -7,7 +7,7 @@ const ImageList = ({imgList}) =>
         <div>
             {imgList.map(img => {
                 return (
-                    <div key={img.id}>
+                    <div key={img.id} className='card_item'>
                         <ImageListenItem img={img}/>
                     </div>
                 )
