@@ -2,10 +2,14 @@
 import s from './App.module.css'
 import {useState} from "react";
 import ImageList from "./components/ImageList/ImageList";
+import useScrollPosition from "./hooks/useScrollPosition";
 
 export function App() {
 
     const [imageList, setImageList] = useState(DATA);
+    const {isBottom} = useScrollPosition();
+
+    console.log(isBottom)
 
     return (
         <div className={s.root}>
